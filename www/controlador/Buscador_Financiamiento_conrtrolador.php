@@ -72,19 +72,39 @@ if ($resultado_consulta == null) {
         <h5>Codigo de bloqueo:</h5>
         <p><?php echo$resultado_consulta[0]["CODIGO_BLOQUEO"]; ?></p>
     </div>
+</div>
+<div class="row">
+   <!--  <div class=col-6>
+        <h5>Referencia bancomer :</h5>
+        <p>1213452212334341</p>
+    </div> -->
     <div class=col-6>
         <h5>Monto de adeudo:</h5>
         <p>$ <?php echo $resultado_consulta[0]["MONTO_ADEUDO"]; ?></p>
     </div>
-</div>
-<div class="row">
-    <div class=col-6>
-        <h5>Referencia bancomer :</h5>
-        <p>1213452212334341</p>
-    </div>
     <div class=col-6>
         <h5>Monto de pago:</h5>
         <p>$ <?php echo $resultado_consulta[0]["OPCION_1"]; ?>.00</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h5>Bancomer</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <h5>Numero de cuenta:</h5>
+        <p>0117902972</p>
+    </div>
+    <div class="col-6">
+        <h5>Cable Interbancaria:</h5>
+        <p>012320001179029728</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>Recuerda, una vez hecho tu pago por transferencia o en practicaja y cajero Bancomer, sube el comprobante de pago en nuestro portal y acreditaremos tu pago. </p>
     </div>
 </div>
 
