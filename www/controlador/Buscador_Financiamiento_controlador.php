@@ -1,5 +1,5 @@
 <?php
-require_once "../modelo/conexion.php";
+require_once "../modelo/Conexion.php";
 
 if (preg_match('/^[0-9]+$/', $_POST["buscar"])) {
     $conexion = Conectar::conexion();
