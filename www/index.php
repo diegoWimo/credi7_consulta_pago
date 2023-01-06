@@ -71,7 +71,7 @@
         $.ajax({
             data: parametros,
             type: 'POST',
-            url: 'controlador/Buscador_Financiamiento_conrtrolador.php',
+            url: 'controlador/Buscador_Financiamiento_controlador.php',
             success: function(data) {
                 document.getElementById("datos_buscador").innerHTML = data;
             }
