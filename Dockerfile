@@ -1,6 +1,7 @@
 FROM php:8.0.0-apache
 ARG DEBIAN_FRONTEND=noninteractive
 RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install pdo pdo_mysql
 # Include alternative DB driver
 # RUN docker-php-ext-install pdo
 # RUN docker-php-ext-install pdo_mysql
