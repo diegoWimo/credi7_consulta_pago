@@ -48,27 +48,27 @@ if ($resultado_consulta == null) {
 } else {?>
 
 <div class="row">
-    <div class=col-6>
+    <div class="col-sm-6 col-12">
         <h5>Nombre:</h5>
         <p><?php echo $resultado_consulta[0]["NOMBRE_CLIENTE"]; ?></p>
     </div>
-    <div class=col-6>
+    <div class="col-sm-6 col-12">
         <h5>Fecha Venta:</h5>
         <p><?php echo $resultado_consulta[0]["FECHA_FINANC"]; ?></p>
     </div>
 </div>
 <div class="row">
-    <div class=col-6>
+    <div class="col-sm-6 col-12">
         <h5>IMEI:</h5>
         <p><?php echo $resultado_consulta[0]["IMEI"] ;?></p>
     </div>
-    <div class=col-6>
+    <div class="col-sm-6 col-12">
         <h5>Modelo:</h5>
         <p><?php echo $resultado_consulta[0]["DESCRIPCION_ART"]; ?></p>
     </div>
 </div>
 <div class="row">
-    <div class=col-6>
+    <div class="col-sm-6 col-12">
         <h5>Codigo de bloqueo:</h5>
         <p><?php echo$resultado_consulta[0]["CODIGO_BLOQUEO"]; ?></p>
     </div>
@@ -78,11 +78,11 @@ if ($resultado_consulta == null) {
         <h5>Referencia bancomer :</h5>
         <p>1213452212334341</p>
     </div> -->
-    <div class=col-6>
+    <div class="col-sm-6 col-12">
         <h5>Monto de adeudo:</h5>
         <p>$ <?php echo $resultado_consulta[0]["MONTO_ADEUDO"]; ?></p>
     </div>
-    <div class=col-6>
+    <div class="col-sm-6 col-12">
         <h5>Monto de pago:</h5>
         <p>$ <?php echo $resultado_consulta[0]["OPCION_1"]; ?>.00</p>
     </div>
@@ -93,18 +93,20 @@ if ($resultado_consulta == null) {
     </div>
 </div>
 <div class="row">
-    <div class="col-6">
+    <div class="col-sm-6 col-12">
         <h5>Numero de cuenta:</h5>
         <p>0117902972</p>
     </div>
-    <div class="col-6">
+    <div class="col-sm-6 col-12">
         <h5>Cable Interbancaria:</h5>
         <p>012320001179029728</p>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <p>Recuerda, una vez hecho tu pago por transferencia o en practicaja y cajero Bancomer, sube el comprobante de pago en nuestro portal y acreditaremos tu pago. </p>
+        <p>Recuerda, una vez hecho tu pago por transferencia o en practicaja y cajero Bancomer, sube el comprobante de pago via Whatsapp 
+        <a href="https://api.whatsapp.com/send?phone=528135231129&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20de%20un%20equipo%20.">click Aqui</a>    
+        y acreditaremos tu pago. </p>
     </div>
 </div>
 
