@@ -4,7 +4,7 @@ require_once "../modelo/Conexion.php";
 if (preg_match('/^[0-9]+$/', $_POST["buscar"])) {
     $conexion = Conectar::conexion();
 //$query ="SELECT C.nombre_cliente, F.Fecha_Financ FROM clientes WHERE nombre_cliente LIKE LOWER('%".$_POST["buscar"]."%')";
-    $query = "SELECT CLI.NOMBRE_CLIENTE ,FIN.FECHA_FINANC, FIN.IMEI, ART.DESCRIPCION_ART, OPPAGO.CODIGO_BLOQUEO,OPPAGO.MONTO_ADEUDO,OPPAGO.OPCION_1
+    $query = "SELECT CLI.NOMBRE_CLIENTE,CLI.DIRECCION_CTE,CLI.COLONIA_CTE,CLI.CIUDAD_CTE, CLI.ESTADO_REP_CTE, FIN.FECHA_FINANC, FIN.IMEI, ART.DESCRIPCION_ART, OPPAGO.CODIGO_BLOQUEO,OPPAGO.MONTO_ADEUDO,OPPAGO.OPCION_1
     FROM FINANCIAMIENTOS FIN 
     INNER JOIN CLIENTES CLI 
     ON FIN.NUM_CLIENTE = CLI.NUM_CLIENTE 
@@ -55,6 +55,26 @@ if ($resultado_consulta == null) {
     <div class="col-sm-6 col-12">
         <h5>Fecha Venta:</h5>
         <p><?php echo $resultado_consulta[0]["FECHA_FINANC"]; ?></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-12">
+        <h5>Calle:</h5>
+        <p><?php echo $resultado_consulta[0]["DIRECCION_CTE"]; ?></p>
+    </div>
+    <div class="col-sm-6 col-12">
+        <h5>Colonia:</h5>
+        <p><?php echo $resultado_consulta[0]["COLONIA_CTE"]; ?></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-12">
+        <h5>Ciudad:</h5>
+        <p><?php echo $resultado_consulta[0]["CIUDAD_CTE"]; ?></p>
+    </div>
+    <div class="col-sm-6 col-12">
+        <h5>Estado:</h5>
+        <p><?php echo $resultado_consulta[0]["ESTADO_REP_CTE"]; ?></p>
     </div>
 </div>
 <div class="row">
